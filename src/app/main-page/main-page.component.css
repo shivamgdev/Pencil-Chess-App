@@ -1,0 +1,14 @@
+.iframe-container {
+  display: flex;
+  flex-direction: row;   
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+iframe {
+  width: 50%;
+  height: 550px;             
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

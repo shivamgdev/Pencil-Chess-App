@@ -1,0 +1,14 @@
+<div class="chess-board-wrapper" style="position: relative;">
+  <ngx-chess-board
+    #board
+    [orientation]="orientation"
+    (moveChange)="onMove($event)">
+  </ngx-chess-board>
+
+  <!-- Transparent overlay when not player's turn -->
+  <div *ngIf="!isMyTurn"
+       style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+              z-index: 10; background-color: rgba(255,255,255,0); pointer-events: all;">
+  </div>
+</div>
+
